@@ -10,5 +10,5 @@ void Color_Test(void);
 void showimage(const unsigned char *p); 
 void QDTFT_Test_Demo(void);
 void Lcd_Init(void);
-void selftest();
+void selftest(void);
 #endif

@@ -161,6 +161,8 @@ void showLongDigit(u16 y, unsigned long n)
 // 程序入口
 void selftest()
 {
+	  SystemInit();	//System init.
+		delay_init(72);//Delay init.
     Lcd_Init();
     LCD_LED_SET;				//通过IO控制背光亮
 		// 自定义程序入口代码

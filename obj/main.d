@@ -28,10 +28,10 @@
 ..\obj\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\obj\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 ..\obj\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+..\obj\main.o: delay.h
+..\obj\main.o: stm32f10x_it.h
+..\obj\main.o: .\TFT2.2\QDTFT_demo.h
 ..\obj\main.o: usart.h
 ..\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-..\obj\main.o: delay.h
-..\obj\main.o: stm32f10x_it.h
 ..\obj\main.o: ldc1000.h
-..\obj\main.o: .\TFT2.2\QDTFT_demo.h
