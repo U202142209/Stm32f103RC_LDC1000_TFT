@@ -1,0 +1,15 @@
+..\obj\qdtft_demo.o: TFT2.2\QDTFT_demo.c
+..\obj\qdtft_demo.o: TFT2.2\stm32f10x.h
+..\obj\qdtft_demo.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\obj\qdtft_demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\qdtft_demo.o: TFT2.2\system_stm32f10x.h
+..\obj\qdtft_demo.o: TFT2.2\stm32f10x_conf.h
+..\obj\qdtft_demo.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\obj\qdtft_demo.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\obj\qdtft_demo.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\obj\qdtft_demo.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
+..\obj\qdtft_demo.o: TFT2.2\Lcd_Driver.h
+..\obj\qdtft_demo.o: TFT2.2\GUI.h
+..\obj\qdtft_demo.o: TFT2.2\delay.h
+..\obj\qdtft_demo.o: TFT2.2\Picture.h
+..\obj\qdtft_demo.o: TFT2.2\QDTFT_demo.h

@@ -1,0 +1,14 @@
+..\obj\gui.o: TFT2.2\GUI.c
+..\obj\gui.o: TFT2.2\stm32f10x.h
+..\obj\gui.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\obj\gui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gui.o: TFT2.2\system_stm32f10x.h
+..\obj\gui.o: TFT2.2\stm32f10x_conf.h
+..\obj\gui.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\obj\gui.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\obj\gui.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\obj\gui.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
+..\obj\gui.o: TFT2.2\Lcd_Driver.h
+..\obj\gui.o: TFT2.2\GUI.h
+..\obj\gui.o: TFT2.2\delay.h
+..\obj\gui.o: TFT2.2\font.h
