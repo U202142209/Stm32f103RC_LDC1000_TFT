@@ -13,3 +13,9 @@
 ..\obj\qdtft_demo.o: TFT2.2\delay.h
 ..\obj\qdtft_demo.o: TFT2.2\Picture.h
 ..\obj\qdtft_demo.o: TFT2.2\QDTFT_demo.h
+..\obj\qdtft_demo.o: ..\user\usart.h
+..\obj\qdtft_demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\qdtft_demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\qdtft_demo.o: ..\user\delay.h
+..\obj\qdtft_demo.o: ..\user\stm32f10x_it.h
+..\obj\qdtft_demo.o: ..\user\ldc1000.h

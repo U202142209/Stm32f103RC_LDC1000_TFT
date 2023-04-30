@@ -2,8 +2,8 @@
 
 #define SPI_RWBIT 		0x80
 
-unsigned long ProximityData;
-unsigned long FrequencyData;
+unsigned long ProximityData=1;
+unsigned long FrequencyData=1;
 
 volatile u32 speed = 999;
 

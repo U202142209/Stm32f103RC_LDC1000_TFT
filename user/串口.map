@@ -49,6 +49,7 @@ Section Cross References
     qdtft_demo.o(.text) refers to qdtft_demo.o(.data) for Num
     qdtft_demo.o(.text) refers to qdtft_demo.o(.constdata) for gImage_qq
     qdtft_demo.o(.text) refers to system_stm32f10x.o(.text) for SystemInit
+    qdtft_demo.o(.text) refers to ldc1000.o(.data) for ProximityData
     delay.o(.text) refers to delay.o(.data) for fac_us
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
@@ -178,7 +179,7 @@ Image Symbol Table
     TI1_Config                               0x08001493   Thumb Code   108  stm32f10x_tim.o(.text)
     .text                                    0x08001c4c   Section        0  stm32f10x_usart.o(.text)
     .text                                    0x08002054   Section        0  main.o(.text)
-    .text                                    0x08002064   Section        0  stm32f10x_it.o(.text)
+    .text                                    0x08002066   Section        0  stm32f10x_it.o(.text)
     .text                                    0x08002080   Section        0  usart.o(.text)
     .text                                    0x080023a0   Section        0  ldc1000.o(.text)
     LDC_Delay_1ms                            0x080023a1   Thumb Code    30  ldc1000.o(.text)
@@ -189,13 +190,13 @@ Image Symbol Table
     .text                                    0x08002718   Section        0  gui.o(.text)
     .text                                    0x08003058   Section        0  lcd_driver.o(.text)
     .text                                    0x0800352c   Section        0  qdtft_demo.o(.text)
-    .text                                    0x08003b14   Section        0  delay.o(.text)
-    .text                                    0x08003bc4   Section       36  init.o(.text)
-    i.__scatterload_copy                     0x08003be8   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08003bf6   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08003bf8   Section       14  handlers.o(i.__scatterload_zeroinit)
-    .constdata                               0x08003c06   Section     7262  gui.o(.constdata)
-    .constdata                               0x08005864   Section     3200  qdtft_demo.o(.constdata)
+    .text                                    0x08003b34   Section        0  delay.o(.text)
+    .text                                    0x08003be4   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x08003c08   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08003c16   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08003c18   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x08003c26   Section     7262  gui.o(.constdata)
+    .constdata                               0x08005884   Section     3200  qdtft_demo.o(.constdata)
     .data                                    0x20000000   Section       20  system_stm32f10x.o(.data)
     .data                                    0x20000014   Section       20  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000014   Data          16  stm32f10x_rcc.o(.data)
@@ -488,16 +489,16 @@ Image Symbol Table
     USART_ClearFlag                          0x08001fbb   Thumb Code    18  stm32f10x_usart.o(.text)
     USART_GetITStatus                        0x08001fcd   Thumb Code    84  stm32f10x_usart.o(.text)
     USART_ClearITPendingBit                  0x08002021   Thumb Code    52  stm32f10x_usart.o(.text)
-    main                                     0x08002055   Thumb Code    16  main.o(.text)
-    NMI_Handler                              0x08002065   Thumb Code     2  stm32f10x_it.o(.text)
-    HardFault_Handler                        0x08002067   Thumb Code     4  stm32f10x_it.o(.text)
-    MemManage_Handler                        0x0800206b   Thumb Code     4  stm32f10x_it.o(.text)
-    BusFault_Handler                         0x0800206f   Thumb Code     4  stm32f10x_it.o(.text)
-    UsageFault_Handler                       0x08002073   Thumb Code     4  stm32f10x_it.o(.text)
-    SVC_Handler                              0x08002077   Thumb Code     2  stm32f10x_it.o(.text)
-    DebugMon_Handler                         0x08002079   Thumb Code     2  stm32f10x_it.o(.text)
-    PendSV_Handler                           0x0800207b   Thumb Code     2  stm32f10x_it.o(.text)
-    SysTick_Handler                          0x0800207d   Thumb Code     2  stm32f10x_it.o(.text)
+    main                                     0x08002055   Thumb Code    18  main.o(.text)
+    NMI_Handler                              0x08002067   Thumb Code     2  stm32f10x_it.o(.text)
+    HardFault_Handler                        0x08002069   Thumb Code     4  stm32f10x_it.o(.text)
+    MemManage_Handler                        0x0800206d   Thumb Code     4  stm32f10x_it.o(.text)
+    BusFault_Handler                         0x08002071   Thumb Code     4  stm32f10x_it.o(.text)
+    UsageFault_Handler                       0x08002075   Thumb Code     4  stm32f10x_it.o(.text)
+    SVC_Handler                              0x08002079   Thumb Code     2  stm32f10x_it.o(.text)
+    DebugMon_Handler                         0x0800207b   Thumb Code     2  stm32f10x_it.o(.text)
+    PendSV_Handler                           0x0800207d   Thumb Code     2  stm32f10x_it.o(.text)
+    SysTick_Handler                          0x0800207f   Thumb Code     2  stm32f10x_it.o(.text)
     USART1_Config                            0x08002081   Thumb Code   116  usart.o(.text)
     USART2_Config                            0x080020f5   Thumb Code   130  usart.o(.text)
     NVIC_USART2_Config                       0x08002177   Thumb Code    36  usart.o(.text)
@@ -543,22 +544,22 @@ Image Symbol Table
     showimage                                0x08003811   Thumb Code   164  qdtft_demo.o(.text)
     QDTFT_Test_Demo                          0x080038b5   Thumb Code    56  qdtft_demo.o(.text)
     showLongDigit                            0x080038ed   Thumb Code   240  qdtft_demo.o(.text)
-    selftest                                 0x080039dd   Thumb Code   186  qdtft_demo.o(.text)
-    delay_init                               0x08003b15   Thumb Code    56  delay.o(.text)
-    delay_ms                                 0x08003b4d   Thumb Code    56  delay.o(.text)
-    delay_us                                 0x08003b85   Thumb Code    56  delay.o(.text)
-    __scatterload                            0x08003bc5   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x08003bc5   Thumb Code     0  init.o(.text)
-    __scatterload_copy                       0x08003be9   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08003bf7   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08003bf9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    asc16                                    0x08003c06   Data        1521  gui.o(.constdata)
-    sz32                                     0x080041f7   Data        1921  gui.o(.constdata)
-    hz16                                     0x08004978   Data        2414  gui.o(.constdata)
-    hz24                                     0x080052e6   Data        1406  gui.o(.constdata)
-    gImage_qq                                0x08005864   Data        3200  qdtft_demo.o(.constdata)
-    Region$$Table$$Base                      0x080064e4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08006504   Number         0  anon$$obj.o(Region$$Table)
+    selftest                                 0x080039dd   Thumb Code   216  qdtft_demo.o(.text)
+    delay_init                               0x08003b35   Thumb Code    56  delay.o(.text)
+    delay_ms                                 0x08003b6d   Thumb Code    56  delay.o(.text)
+    delay_us                                 0x08003ba5   Thumb Code    56  delay.o(.text)
+    __scatterload                            0x08003be5   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08003be5   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x08003c09   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08003c17   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08003c19   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    asc16                                    0x08003c26   Data        1521  gui.o(.constdata)
+    sz32                                     0x08004217   Data        1921  gui.o(.constdata)
+    hz16                                     0x08004998   Data        2414  gui.o(.constdata)
+    hz24                                     0x08005306   Data        1406  gui.o(.constdata)
+    gImage_qq                                0x08005884   Data        3200  qdtft_demo.o(.constdata)
+    Region$$Table$$Base                      0x08006504   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08006524   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f10x.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f10x.o(.data)
     ProximityData                            0x20000028   Data           4  ldc1000.o(.data)
@@ -576,22 +577,22 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006548, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006568, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006504, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006524, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000130   Data   RO          116    RESET               startup_stm32f10x_hd.o
-    0x08000130   0x08000130   0x00000000   Code   RO          578  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000130   0x08000130   0x00000004   Code   RO          581    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000134   0x08000134   0x00000004   Code   RO          584    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000138   0x08000138   0x00000000   Code   RO          586    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000138   0x08000138   0x00000000   Code   RO          588    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000138   0x08000138   0x00000008   Code   RO          589    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO          591    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO          593    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000140   0x08000140   0x00000004   Code   RO          582    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000130   0x08000130   0x00000000   Code   RO          582  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x08000130   0x00000004   Code   RO          585    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x08000134   0x00000004   Code   RO          588    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x08000138   0x00000000   Code   RO          590    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x08000138   0x00000000   Code   RO          592    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x08000138   0x00000008   Code   RO          593    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO          595    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO          597    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000140   0x08000140   0x00000004   Code   RO          586    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x08000144   0x08000144   0x000001e0   Code   RO           17    .text               system_stm32f10x.o
     0x08000324   0x08000324   0x00000024   Code   RO          117    .text               startup_stm32f10x_hd.o
     0x08000348   0x08000348   0x000000dc   Code   RO          121    .text               misc.o
@@ -601,36 +602,35 @@ Memory Map of the image
     0x08000e30   0x08000e30   0x00000e1a   Code   RO          367    .text               stm32f10x_tim.o
     0x08001c4a   0x08001c4a   0x00000002   PAD
     0x08001c4c   0x08001c4c   0x00000408   Code   RO          379    .text               stm32f10x_usart.o
-    0x08002054   0x08002054   0x00000010   Code   RO          403    .text               main.o
-    0x08002064   0x08002064   0x0000001a   Code   RO          438    .text               stm32f10x_it.o
-    0x0800207e   0x0800207e   0x00000002   PAD
+    0x08002054   0x08002054   0x00000012   Code   RO          403    .text               main.o
+    0x08002066   0x08002066   0x0000001a   Code   RO          438    .text               stm32f10x_it.o
     0x08002080   0x08002080   0x00000320   Code   RO          450    .text               usart.o
     0x080023a0   0x080023a0   0x00000378   Code   RO          478    .text               ldc1000.o
     0x08002718   0x08002718   0x00000940   Code   RO          494    .text               gui.o
     0x08003058   0x08003058   0x000004d4   Code   RO          532    .text               lcd_driver.o
-    0x0800352c   0x0800352c   0x000005e8   Code   RO          544    .text               qdtft_demo.o
-    0x08003b14   0x08003b14   0x000000b0   Code   RO          564    .text               delay.o
-    0x08003bc4   0x08003bc4   0x00000024   Code   RO          595    .text               mc_w.l(init.o)
-    0x08003be8   0x08003be8   0x0000000e   Code   RO          599    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003bf6   0x08003bf6   0x00000002   Code   RO          600    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003bf8   0x08003bf8   0x0000000e   Code   RO          601    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08003c06   0x08003c06   0x00001c5e   Data   RO          495    .constdata          gui.o
-    0x08005864   0x08005864   0x00000c80   Data   RO          545    .constdata          qdtft_demo.o
-    0x080064e4   0x080064e4   0x00000020   Data   RO          597    Region$$Table       anon$$obj.o
+    0x0800352c   0x0800352c   0x00000608   Code   RO          544    .text               qdtft_demo.o
+    0x08003b34   0x08003b34   0x000000b0   Code   RO          568    .text               delay.o
+    0x08003be4   0x08003be4   0x00000024   Code   RO          599    .text               mc_w.l(init.o)
+    0x08003c08   0x08003c08   0x0000000e   Code   RO          603    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003c16   0x08003c16   0x00000002   Code   RO          604    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003c18   0x08003c18   0x0000000e   Code   RO          605    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003c26   0x08003c26   0x00001c5e   Data   RO          495    .constdata          gui.o
+    0x08005884   0x08005884   0x00000c80   Data   RO          545    .constdata          qdtft_demo.o
+    0x08006504   0x08006504   0x00000020   Data   RO          601    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006504, Size: 0x00000450, Max: 0x0000c000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006524, Size: 0x00000450, Max: 0x0000c000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08006504   0x00000014   Data   RW           18    .data               system_stm32f10x.o
-    0x20000014   0x08006518   0x00000014   Data   RW          318    .data               stm32f10x_rcc.o
-    0x20000028   0x0800652c   0x0000000c   Data   RW          480    .data               ldc1000.o
-    0x20000034   0x08006538   0x0000000a   Data   RW          546    .data               qdtft_demo.o
-    0x2000003e   0x08006542   0x00000004   Data   RW          565    .data               delay.o
-    0x20000042   0x08006546   0x00000002   PAD
+    0x20000000   0x08006524   0x00000014   Data   RW           18    .data               system_stm32f10x.o
+    0x20000014   0x08006538   0x00000014   Data   RW          318    .data               stm32f10x_rcc.o
+    0x20000028   0x0800654c   0x0000000c   Data   RW          480    .data               ldc1000.o
+    0x20000034   0x08006558   0x0000000a   Data   RW          546    .data               qdtft_demo.o
+    0x2000003e   0x08006562   0x00000004   Data   RW          569    .data               delay.o
+    0x20000042   0x08006566   0x00000002   PAD
     0x20000044        -       0x0000000a   Zero   RW          479    .bss                ldc1000.o
-    0x2000004e   0x08006546   0x00000002   PAD
+    0x2000004e   0x08006566   0x00000002   PAD
     0x20000050        -       0x00000400   Zero   RW          114    STACK               startup_stm32f10x_hd.o
 
 
@@ -646,9 +646,9 @@ Image component sizes
       2368         18       7262          0          0     204401   gui.o
       1236         16          0          0          0       4229   lcd_driver.o
        888         30          0         12         10       3217   ldc1000.o
-        16          0          0          0          0        411   main.o
+        18          0          0          0          0        427   main.o
        220         22          0          0          0       1897   misc.o
-      1512        302       3200         10          0       2829   qdtft_demo.o
+      1544        304       3200         10          0       2979   qdtft_demo.o
         36          8        304          0       1024        892   startup_stm32f10x_hd.o
        860         38          0          0          0       5829   stm32f10x_gpio.o
         26          0          0          0          0       1186   stm32f10x_it.o
@@ -660,9 +660,9 @@ Image component sizes
        800         14          0          0          0       4353   usart.o
 
     ----------------------------------------------------------------------
-     14976        654      10798         68       1036     539840   Object Totals
+     15008        656      10798         68       1036     540006   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         4          0          0          2          2          0   (incl. Padding)
+         2          0          0          2          2          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -699,15 +699,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15062        670      10798         68       1036     538864   Grand Totals
-     15062        670      10798         68       1036     538864   ELF Image Totals
-     15062        670      10798         68          0          0   ROM Totals
+     15094        672      10798         68       1036     539030   Grand Totals
+     15094        672      10798         68       1036     539030   ELF Image Totals
+     15094        672      10798         68          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                25860 (  25.25kB)
+    Total RO  Size (Code + RO Data)                25892 (  25.29kB)
     Total RW  Size (RW Data + ZI Data)              1104 (   1.08kB)
-    Total ROM Size (Code + RO Data + RW Data)      25928 (  25.32kB)
+    Total ROM Size (Code + RO Data + RW Data)      25960 (  25.35kB)
 
 ==============================================================================
 

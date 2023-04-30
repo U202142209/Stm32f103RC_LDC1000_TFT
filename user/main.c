@@ -9,7 +9,7 @@
 
 
 #include <stm32f10x.h>
-#include "delay.h"
+// #include "delay.h"
 #include "QDTFT_demo.h"
 
 #include "usart.h"
@@ -24,7 +24,7 @@ int main(void)
 {
     USART1_Config();			// ≈‰÷√¥Æø⁄
     SPI_LDC_Init();				// ≥ı ºªØLDC1000
-    ````
+		// LDCRead();
     selftest();
     /*
     while(1)
@@ -43,5 +43,5 @@ int main(void)
     }
     */
 
-}
+
 }

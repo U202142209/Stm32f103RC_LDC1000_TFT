@@ -147,7 +147,6 @@ void QDTFT_Test_Demo(void)
 // 在指定的y轴位置逆序输出long整数值
 void showLongDigit(u16 y, unsigned long n)
 {
-
     u8 i = 0;
     while(n != 0)
     {
@@ -157,15 +156,19 @@ void showLongDigit(u16 y, unsigned long n)
     }
 }
 
+#include "usart.h"
+#include "ldc1000.h"
+extern unsigned long ProximityData;                                           //LDC上Proximity Data
+extern unsigned long FrequencyData;
 
 // 程序入口
 void selftest()
 {
-	  SystemInit();	//System init.
-		delay_init(72);//Delay init.
+    SystemInit();	//System init.
+    delay_init(72);//Delay init.
     Lcd_Init();
     LCD_LED_SET;				//通过IO控制背光亮
-		// 自定义程序入口代码
+    // 自定义程序入口代码
     Lcd_Clear(GRAY0);
     while(1)
     {
@@ -178,8 +181,12 @@ void selftest()
         Gui_DrawFont_GBK16(16, 150, RED, GRAY0, "一元硬币在上,五角硬币在下");
         // delay_ms(3500);
         // 数字测试
-        showLongDigit(180, 4561531);
-        showLongDigit(220, 902241202);
+        showLongDigit(180, ProximityData);
+        showLongDigit(220, FrequencyData);
+        // LDCRead();
+        FrequencyData++;
+			if (FrequencyData==99999)
+				FrequencyData=1;
     }
 
     // LCD_LED_CLR;//IO控制背光灭

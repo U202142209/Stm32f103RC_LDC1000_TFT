@@ -11,6 +11,7 @@ void delay_init(u8 SYSCLK)
     fac_us = SYSCLK / 8;
     fac_ms = (u16)fac_us * 1000;
 }
+
 //延时nms
 //注意nms的范围
 //SysTick->LOAD为24位寄存器,所以,最大延时为:
